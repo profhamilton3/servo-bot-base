@@ -5,7 +5,10 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "XGO": "github:elecfreaks/pxt-xgo#v1.3.9",
+        "wuKong": "github:elecfreaks/pxt-wukong#v1.5.7",
+        "sonarbit": "github:elecfreaks/pxt-sonarbit#V1.0.9"
     },
     "files": [
         "README.md",
