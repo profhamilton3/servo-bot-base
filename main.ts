@@ -1,12 +1,17 @@
 input.onButtonPressed(Button.A, function () {
-    wuKong.setServoSpeed(wuKong.ServoList.S0, 50)
-    wuKong.setServoSpeed(wuKong.ServoList.S2, 50)
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerUp), music.PlaybackMode.InBackground)
+    wuKong.setServoSpeed(wuKong.ServoList.S0, -50)
+    wuKong.setServoSpeed(wuKong.ServoList.S1, 50)
 })
 input.onButtonPressed(Button.B, function () {
-    wuKong.stopAllMotor()
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerDown), music.PlaybackMode.InBackground)
+    wuKong.setServoSpeed(wuKong.ServoList.S0, 0)
+    wuKong.setServoSpeed(wuKong.ServoList.S1, 0)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    wuKong.stopAllMotor()
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.PowerDown), music.PlaybackMode.InBackground)
+    wuKong.setServoSpeed(wuKong.ServoList.S0, 0)
+    wuKong.setServoSpeed(wuKong.ServoList.S1, 0)
 })
 wuKong.lightIntensity(100)
 wuKong.setLightMode(wuKong.LightMode.BREATH)
